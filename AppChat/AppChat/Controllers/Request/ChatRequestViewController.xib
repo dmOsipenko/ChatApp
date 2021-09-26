@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatRequestViewController" customModule="AppChat" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImage" destination="nwQ-oY-kP2" id="MPQ-dM-xBu"/>
+                <outlet property="cityLable" destination="c9b-Lr-P0V" id="Krg-HO-kjl"/>
+                <outlet property="emailLable" destination="tgc-A7-eIW" id="yfK-TT-uhE"/>
+                <outlet property="mainView" destination="dxj-8b-iTA" id="dwg-et-sbd"/>
+                <outlet property="nameLable" destination="QsT-a3-PRT" id="IKX-KF-BEt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-oY-kP2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-8b-iTA">
+                    <rect key="frame" x="0.0" y="642" width="414" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-a3-PRT">
+                            <rect key="frame" x="16" y="20" width="382" height="30"/>
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-Lr-P0V">
+                            <rect key="frame" x="16" y="52" width="382" height="24.5"/>
+                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-A7-eIW">
+                            <rect key="frame" x="16" y="78.5" width="382" height="18"/>
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                            <color key="textColor" name="avatarViewBackground"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хочет добавить вас в друзья" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-6D-gdJ">
+                            <rect key="frame" x="16" y="121.5" width="382" height="29"/>
+                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                            <color key="textColor" name="label"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-e1-uBO">
+                            <rect key="frame" x="20" y="170.5" width="177" height="30"/>
+                            <state key="normal" title="Добавить"/>
+                            <connections>
+                                <action selector="addFriendButton:" destination="-1" eventType="touchUpInside" id="gsn-sR-GoF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opN-Jo-POV">
+                            <rect key="frame" x="217" y="170.5" width="177" height="30"/>
+                            <state key="normal" title="Отменить"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="hco-a3-6sW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="c9b-Lr-P0V" firstAttribute="leading" secondItem="dxj-8b-iTA" secondAttribute="leading" constant="16" id="4cY-5F-fPf"/>
+                        <constraint firstAttribute="trailing" secondItem="QsT-a3-PRT" secondAttribute="trailing" constant="16" id="9Re-2Q-hbc"/>
+                        <constraint firstItem="qPY-6D-gdJ" firstAttribute="leading" secondItem="tgc-A7-eIW" secondAttribute="leading" id="Az2-bi-vDs"/>
+                        <constraint firstItem="QsT-a3-PRT" firstAttribute="top" secondItem="dxj-8b-iTA" secondAttribute="top" constant="20" id="JPd-L3-xyh"/>
+                        <constraint firstItem="opN-Jo-POV" firstAttribute="leading" secondItem="56Z-e1-uBO" secondAttribute="trailing" constant="20" id="RmS-Bt-nDi"/>
+                        <constraint firstItem="opN-Jo-POV" firstAttribute="centerY" secondItem="56Z-e1-uBO" secondAttribute="centerY" id="UXi-yT-SjA"/>
+                        <constraint firstItem="QsT-a3-PRT" firstAttribute="leading" secondItem="dxj-8b-iTA" secondAttribute="leading" constant="16" id="YPu-JG-7m8"/>
+                        <constraint firstAttribute="trailing" secondItem="tgc-A7-eIW" secondAttribute="trailing" constant="16" id="YpY-rL-yai"/>
+                        <constraint firstAttribute="height" constant="220" id="ZEk-bt-yFP"/>
+                        <constraint firstItem="opN-Jo-POV" firstAttribute="height" secondItem="56Z-e1-uBO" secondAttribute="height" id="ZYC-SC-L9c"/>
+                        <constraint firstAttribute="trailing" secondItem="c9b-Lr-P0V" secondAttribute="trailing" constant="16" id="a3a-B6-obz"/>
+                        <constraint firstAttribute="trailing" secondItem="opN-Jo-POV" secondAttribute="trailing" constant="20" id="aaf-9R-ZqU"/>
+                        <constraint firstItem="tgc-A7-eIW" firstAttribute="leading" secondItem="dxj-8b-iTA" secondAttribute="leading" constant="16" id="b51-9Y-7xF"/>
+                        <constraint firstItem="c9b-Lr-P0V" firstAttribute="top" secondItem="QsT-a3-PRT" secondAttribute="bottom" constant="2" id="eU1-hU-gN2"/>
+                        <constraint firstItem="56Z-e1-uBO" firstAttribute="width" secondItem="opN-Jo-POV" secondAttribute="width" id="fvs-rS-QCP"/>
+                        <constraint firstItem="qPY-6D-gdJ" firstAttribute="top" secondItem="tgc-A7-eIW" secondAttribute="bottom" constant="25" id="grT-AB-EUn"/>
+                        <constraint firstItem="qPY-6D-gdJ" firstAttribute="leading" secondItem="dxj-8b-iTA" secondAttribute="leading" constant="16" id="oTv-53-frW"/>
+                        <constraint firstItem="tgc-A7-eIW" firstAttribute="top" secondItem="c9b-Lr-P0V" secondAttribute="bottom" constant="2" id="qRD-ps-7zE"/>
+                        <constraint firstItem="56Z-e1-uBO" firstAttribute="top" secondItem="qPY-6D-gdJ" secondAttribute="bottom" constant="20" id="qz4-Vw-lw7"/>
+                        <constraint firstItem="56Z-e1-uBO" firstAttribute="leading" secondItem="dxj-8b-iTA" secondAttribute="leading" constant="20" id="xFY-PU-10a"/>
+                        <constraint firstAttribute="trailing" secondItem="qPY-6D-gdJ" secondAttribute="trailing" constant="16" id="xLG-IJ-oGD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nwQ-oY-kP2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0Yl-Jc-wJy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nwQ-oY-kP2" secondAttribute="bottom" id="35I-VX-NQ7"/>
+                <constraint firstItem="nwQ-oY-kP2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WcZ-eO-m7Y"/>
+                <constraint firstItem="nwQ-oY-kP2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zp6-3g-9yq"/>
+                <constraint firstItem="dxj-8b-iTA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h71-yQ-0w9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dxj-8b-iTA" secondAttribute="bottom" id="sjC-tz-vjR"/>
+                <constraint firstItem="dxj-8b-iTA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uiy-jA-Ck9"/>
+            </constraints>
+            <point key="canvasLocation" x="105.79710144927537" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="avatarViewBackground">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
